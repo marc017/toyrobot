@@ -1,0 +1,43 @@
+{
+  "name": "toyrobot",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "bin": {
+    "@mj_systainable": "lib/index.js",
+    "toyrobot": "lib/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "test": "sudo npm i -g && toyrobot",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "play": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "commander": "^6.0.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/figlet": "^1.2.0",
+    "@types/node": "^14.0.25",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "cli",
+    "toyrobot"
+  ],
+  "description": ""
+}

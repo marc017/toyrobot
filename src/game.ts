@@ -35,12 +35,12 @@ export const isGoingToFall = (robot: Robot): boolean => {
  * @return Move a temporary move value with new move coordinates and isGoingToFall
  */
 export const moveAttempt = (): Robot => {
-  let robotMove = {
+  let robotMove: Robot = {
     coord_x: robot.coord_x,
     coord_y: robot.coord_y,
     direction: robot.direction,
     isGoingToFall: true,
-  } as Robot;
+  };
   if (robot.direction === DIRECTIONS.NORTH) {
     robotMove.coord_y++;
   }

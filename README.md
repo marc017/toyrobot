@@ -15,7 +15,7 @@ npm run build
 Then you can link the build file to your npm using:
 
 ```
-npm link
+npm link toyrobot
 ```
 
 Finally you play by calling `robot` or you can run the test file by executing `robot -t`
